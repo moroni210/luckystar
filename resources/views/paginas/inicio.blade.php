@@ -8,7 +8,6 @@
 </head>
 
 <body class="fundo-inicio">
-    
 
 <header class="cabecalho">
 
@@ -166,109 +165,142 @@
 </section>
 
 <!-- SOBRE -->
+<main class="sobre-pagina">
 
-    <main>
+    <!-- BANNER PRINCIPAL -->
+    <section id="sobre" class="sobre-banner">
+        <div class="sobre-banner-conteudo">
+            <span class="sobre-etiqueta">CONHEÇA NOSSA HISTÓRIA</span>
 
-        <section id="sobre" class="sobre-banner">
-            <div class="sobre-conteudo">
-                <span>CONHEÇA NOSSA HISTÓRIA</span>
+            <h1>
+                Muito além da
+                <span>tecnologia.</span>
+            </h1>
 
-                <h1>
-                    Muito além da<br>
-                    <strong>tecnologia.</strong>
-                </h1>
+            <p>
+                Conectamos você à inovação, qualidade e tecnologia
+                que combina com seu estilo.
+            </p>
 
+            <a href="/produtos" class="sobre-botao">
+                Conheça nossos produtos
+            </a>
+        </div>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section class="sobre-apresentacao">
+        <div class="sobre-texto">
+            <span class="sobre-etiqueta">QUEM SOMOS</span>
+
+            <h2>Tecnologia fiel ao seu estilo.</h2>
+
+            <p>
+                A LuckStar nasceu com o propósito de aproximar
+                pessoas da tecnologia, oferecendo produtos que
+                unem inovação, qualidade e praticidade.
+            </p>
+
+            <p>
+                Acreditamos que cada pessoa tem seu próprio estilo.
+                Por isso, buscamos oferecer soluções tecnológicas
+                que acompanhem o dia a dia e facilitem a conexão
+                com o mundo.
+            </p>
+
+            <p>
+                Mais do que oferecer produtos, queremos proporcionar
+                uma experiência de compra simples, confiável e
+                conectada às necessidades de cada cliente.
+            </p>
+        </div>
+
+        <div class="sobre-imagem">
+            <img src="{{ asset('images/tecnologia.jpg') }}" alt="LuckStar">
+        </div>
+    </section>
+
+    <!-- NOSSA HISTÓRIA -->
+    <section class="sobre-historia">
+        <div class="sobre-historia-conteudo">
+            <span class="sobre-etiqueta">NOSSA ESSÊNCIA</span>
+
+            <h2>Uma conexão com o futuro.</h2>
+
+            <p>
+                A tecnologia está presente em todos os momentos
+                da nossa vida. Na LuckStar, queremos tornar essa
+                conexão mais acessível, prática e especial.
+            </p>
+
+            <p>
+                Nosso compromisso é continuar evoluindo,
+                acompanhando as novidades do mercado e buscando
+                oferecer produtos que façam a diferença.
+            </p>
+        </div>
+    </section>
+
+    <!-- MISSÃO, VISÃO E VALORES -->
+    <section class="sobre-valores">
+        <div class="sobre-titulo">
+            <span class="sobre-etiqueta">O QUE NOS MOVE</span>
+            <h2>Nossos princípios</h2>
+            <p>Os valores que fazem parte da nossa identidade.</p>
+        </div>
+
+        <div class="sobre-cards">
+
+            <article class="sobre-card">
+                <div class="sobre-icone">✦</div>
+                <h3>Missão</h3>
                 <p>
-                    Conectamos você à inovação, qualidade
-                    e tecnologia que combina com seu estilo.
+                    Aproximar pessoas da tecnologia por meio de
+                    produtos que ofereçam qualidade, praticidade
+                    e inovação.
                 </p>
+            </article>
 
-                <a href="{{ url('/produtos') }}" class="sobre-botao">
-                    Conheça nossos produtos
-                </a>
-            </div>
-        </section>
-
-       <section class="sobre-apresentacao">
-
-            <div class="sobre-texto">
-                <span class="sobre-legenda">QUEM SOMOS</span>
-
-                <h2>
-                    Tecnologia fiel ao <strong>seu estilo.</strong>
-                </h2>
-
+            <article class="sobre-card">
+                <div class="sobre-icone">◎</div>
+                <h3>Visão</h3>
                 <p>
-                    A LuckStar nasceu com o propósito de conectar
-                    pessoas à tecnologia, oferecendo produtos que
-                    unem inovação, qualidade e estilo.
+                    Crescer como uma marca de confiança,
+                    acompanhando a evolução tecnológica e as
+                    necessidades dos nossos clientes.
                 </p>
+            </article>
 
+            <article class="sobre-card">
+                <div class="sobre-icone">◇</div>
+                <h3>Valores</h3>
                 <p>
-                    Somos uma loja dedicada ao universo dos
-                    smartphones e acessórios, buscando proporcionar
-                    uma experiência de compra simples, transparente
-                    e satisfatória.
+                    Trabalhar com compromisso, transparência,
+                    respeito, qualidade e dedicação em cada
+                    experiência.
                 </p>
+            </article>
 
-                <p>
-                    Aqui, cada detalhe importa. Queremos ajudar você
-                    a encontrar a tecnologia ideal para acompanhar
-                    seu dia a dia.
-                </p>
-            </div>
+        </div>
+    </section>
 
-            <div class="sobre-imagem">
-                <img
-                    src="{{ asset('images/tecnologia.jpg') }}"
-                    alt="Tecnologia LuckStar"
-                >
-            </div>
+    <!-- CHAMADA FINAL -->
+    <section class="sobre-final">
+        <span class="sobre-etiqueta">FAÇA PARTE DESSA CONEXÃO</span>
 
-        </section>
+        <h2>O futuro está mais perto do que você imagina.</h2>
 
-        <section class="sobre-valores">
+        <p>
+            Descubra produtos que combinam com você e acompanham
+            seu estilo de vida.
+        </p>
 
-            <div class="sobre-titulo">
-                <span>O QUE NOS MOVE</span>
-                <h2>Nossos <strong>princípios</strong></h2>
-                <p>Os valores que fazem parte da nossa essência.</p>
-            </div>
+        <a href="/produtos" class="sobre-botao">
+            Explorar produtos
+        </a>
+    </section>
 
-            <div class="sobre-cards">
-
-                <div class="sobre-card">
-                    <div class="sobre-icone">✦</div>
-                    <h3>Nossa missão</h3>
-                    <p>
-                        Oferecer tecnologia, praticidade e inovação,
-                        ajudando cada cliente a encontrar o produto
-                        ideal.
-                    </p>
-                </div>
-
-                <div class="sobre-card">
-                    <div class="sobre-icone">◈</div>
-                    <h3>Nossa visão</h3>
-                    <p>
-                        Ser reconhecida pela confiança, qualidade
-                        dos produtos e compromisso com os clientes.
-                    </p>
-                </div>
-
-                <div class="sobre-card">
-                    <div class="sobre-icone">♛</div>
-                    <h3>Nossos valores</h3>
-                    <p>
-                        Trabalhar com transparência, responsabilidade,
-                        inovação e respeito em cada atendimento.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
+</main>
 
 
 <!-- CONTATO -->

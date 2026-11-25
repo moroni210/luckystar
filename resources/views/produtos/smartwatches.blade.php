@@ -97,9 +97,9 @@
                              alt="{{ $produto->nome }}">
                     @endif
 
-                    <h6 class="marca">{{ $produto->marca }}</h6>
                     <h3>{{ $produto->nome }}</h3>
-
+                    
+                    <h6 class="marca">{{ $produto->marca }}</h6>
 
                     <p>{{ $produto->descricao }}</p>
 
@@ -114,6 +114,7 @@
     data-id="{{ $produto->id }}"
     data-nome="{{ $produto->nome }}"
     data-preco="{{ $produto->preco }}"
+    data-marca="{{ $produto->marca }}"
     data-estoque="{{ $produto->estoque }}"
     data-imagem="{{ $produto->imagem ? asset('storage/' . $produto->imagem) : '' }}"
     data-categoria="{{ $produto->categoria }}"

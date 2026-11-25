@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,23 +25,12 @@
             @csrf
 
             <label>E-mail</label>
-            <input
-                type="email"
-                name="usuario"
-                placeholder="Digite seu e-mail"
-                value="{{ old('usuario') }}"
-                required
-            >
+            <input type="email" name="usuario" placeholder="Digite seu e-mail" value="{{ old('usuario') }}" required>
 
             <br><br>
 
             <label>Senha</label>
-            <input
-                type="password"
-                name="password"
-                placeholder="Digite sua senha"
-                required
-            >
+            <input type="password" name="password" placeholder="Digite sua senha" required>
 
             <br><br>
 

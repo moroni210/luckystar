@@ -1,4 +1,6 @@
-/*ABRIR CONTA*/
+/* =================================
+   ABRIR CONTA - LUCKSTAR
+================================= */
 window.abrirConta = function () {
 
     const menu = document.getElementById("menuConta");
@@ -17,7 +19,9 @@ window.abrirConta = function () {
 };
 
 
-/*IR PARA CONTATO*/
+/* =================================
+   IR PARA CONTATO - LUCKSTAR
+================================= */
 
 window.irParaContato = function(event) {
 
@@ -34,9 +38,32 @@ window.irParaContato = function(event) {
 
 };
 
+const secaoContato = document.querySelector('.contato');
+
+const observador = new IntersectionObserver((entradas) => {
+
+    entradas.forEach((entrada) => {
+
+        if (entrada.isIntersecting) {
+
+            entrada.target.classList.add('animar');
+
+            observador.unobserve(entrada.target);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+observador.observe(secaoContato);
 
 
-/*IR PARA SOBRE*/
+/* =================================
+   IR PARA SOBRE - LUCKSTAR
+================================= */
 window.irParasobre = function(event) {
 
     event.preventDefault();
@@ -56,7 +83,9 @@ window.irParasobre = function(event) {
 
 
 
-/*=======PESQUISA DE PRODUTOS=======*/
+/* =================================
+   PESQUISA DOS PRODUTOS- LUCKSTAR
+================================= */
 document.addEventListener('DOMContentLoaded', function () {
 
     const campoPesquisa = document.getElementById('pesquisar');
@@ -87,9 +116,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
-/*=======PESQUISA DE PRODUTOS=======*/
 
-/*=======FILTRAGEM DE PRODUTOS=======*/
+
+/* =================================
+   FILTRAGEM DOS PRODUTOS - LUCKSTAR
+================================= */
 function filtrarProdutos(tipo) {
 
     const produtos = document.querySelectorAll('.produto-card');
@@ -107,7 +138,6 @@ function filtrarProdutos(tipo) {
     });
 
 }
-
 function mostrarNotificacao(mensagem) {
 
     const aviso = document.createElement('div');
@@ -133,13 +163,17 @@ function mostrarNotificacao(mensagem) {
     }, 3000);
 
 }
-// Recupera os produtos salvos
+/* =================================
+   RECUPERAR PRODUTOS SALVOS - LUCKSTAR
+================================= */
 let carrinho = JSON.parse(
     localStorage.getItem('luckstar_carrinho')
 ) || [];
 
 
-// ADICIONAR PRODUTOS
+/* =================================
+   ADICIONAR PRODUTOS - LUCKSTAR
+================================= */
 document.querySelectorAll('.botao-comprar').forEach(botao => {
 
     botao.addEventListener('click', function () {
@@ -195,7 +229,9 @@ document.querySelectorAll('.botao-comprar').forEach(botao => {
 });
 
 
-// MOSTRAR PRODUTOS NO CARRINHO
+/* =================================
+   MOSTRAR PRODUTOS NO CARRINHO - LUCKSTAR
+================================= */
 const lista = document.getElementById('itens-carrinho');
 
 if (lista) {
@@ -299,27 +335,3 @@ if (lista) {
 
 }
 
-
-
-
-const secaoContato = document.querySelector('.contato');
-
-const observador = new IntersectionObserver((entradas) => {
-
-    entradas.forEach((entrada) => {
-
-        if (entrada.isIntersecting) {
-
-            entrada.target.classList.add('animar');
-
-            observador.unobserve(entrada.target);
-
-        }
-
-    });
-
-}, {
-    threshold: 0.15
-});
-
-observador.observe(secaoContato);

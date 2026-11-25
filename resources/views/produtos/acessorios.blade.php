@@ -98,6 +98,7 @@
             @endif
 
             <h3>{{ $produto->nome }}</h3>
+            
 
             <p>{{ $produto->descricao }}</p>
 
